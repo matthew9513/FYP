@@ -28,3 +28,6 @@ Route::resource('psu', PSUController::class);
 Route::resource('storage', StorageController::class);
 
 Route::resource('gpu', GPUController::class);
+Auth::routes();
+
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
