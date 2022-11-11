@@ -14,20 +14,27 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+//Admin
 
-Route::resource('cpu', CPUController::class);
+Route::prefix('admin')->middleware(['auth','isAdmin'])->group(function(){
+    Route::resource('cpu', CPUController::class);
 
-Route::resource('motherboard', MotherboardController::class);
+    Route::resource('motherboard', MotherboardController::class);
+    
+    Route::resource('ram', RAMController::class);
+    
+    Route::resource('casing', CasingController::class);
+    
+    Route::resource('psu', PSUController::class);
+    
+    Route::resource('storage', StorageController::class);
+    
+    Route::resource('gpu', GPUController::class);
+});
 
-Route::resource('ram', RAMController::class);
 
-Route::resource('casing', CasingController::class);
 
-Route::resource('psu', PSUController::class);
 
-Route::resource('storage', StorageController::class);
-
-Route::resource('gpu', GPUController::class);
 Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
