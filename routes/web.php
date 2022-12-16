@@ -33,8 +33,12 @@ Route::prefix('admin')->middleware(['auth','isAdmin'])->group(function(){
 });
 
 
-
+Route::resource('budget', BudgetController::class);
 
 Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+
+//Route::get('/budget', [App\Http\Controllers\BudgetController::class, 'index'])->name('budget');
+
+Route::get('/specific', [App\Http\Controllers\SpecificController::class, 'index'])->name('specific');
