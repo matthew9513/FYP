@@ -15,8 +15,6 @@
 
   @section('content')
   <style>
-
-
 .container {
   max-width: 960px;
 }
@@ -34,7 +32,8 @@
 
   <div class="pricing-header p-3 pb-md-4 mx-auto text-center">
       <h1 class="display-4 fw-normal">Specific Program Targeting System</h1>
-      <p class="fs-5 text-muted"></p>
+      <p></p>
+      <h2>Editing Program</h2>
     </div>
   </header>
 
@@ -60,7 +59,7 @@
       <div class="col">
         <div class="card mb-4 rounded-3 shadow-sm">
           <div class="card-header py-3">
-            <h4 class="my-0 fw-normal"></h4>
+            <h4 class="my-0 fw-normal">#</h4>
           </div>
           <div class="card-body">
             <h1 class="card-title pricing-card-title">Price<small class="text-muted fw-light"></small></h1>
@@ -74,10 +73,13 @@
           </div>
         </div>
       </div>
+
+      <p></p>
+        <h2>Games</h2>
       <div class="col">
         <div class="card mb-4 rounded-3 shadow-sm">
           <div class="card-header py-3">
-            <h4 class="my-0 fw-normal"></h4>
+            <h4 class="my-0 fw-normal">#</h4>
           </div>
           <div class="card-body">
             <h1 class="card-title pricing-card-title">Price<small class="text-muted fw-light"></small></h1>
