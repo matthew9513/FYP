@@ -94,7 +94,7 @@ class CasingController extends Controller
             'price' => 'required',
         ]);
 
-        $cpu->update($request->all());
+        $casing->update($request->all());
       
         return redirect()->route('casing.index')
                         ->with('success','Casing updated successfully');
