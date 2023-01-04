@@ -1,65 +1,42 @@
-@extends('layout')
+@extends('layouts\app')
   
-@section('content')
-    <div class="row">
-        <div class="col-lg-12 margin-tb">
-            <div class="pull-left">
-                <h2> Show Storage</h2>
-            </div>
-            <div class="pull-right">
-                <a class="btn btn-primary" href="{{ route('storage.index') }}"> Back</a>
-            </div>
-        </div>
-    </div>
-   
-    <div class="row">
-        <div class="col-xs-12 col-sm-12 col-md-12">
-            <div class="form-group">
-                <strong>Name:</strong>
-                {{ $storage->name }}
-            </div>
-        </div>
-        <div class="col-xs-12 col-sm-12 col-md-12">
-            <div class="form-group">
-                <strong>Manufacturer:</strong>
-                {{ $storage->manufacturer }}
-            </div>
-        </div>
-        <div class="col-xs-12 col-sm-12 col-md-12">
-            <div class="form-group">
-                <strong>Type:</strong>
-                {{ $storage->type }}
-            </div>
-        </div>
-        <div class="col-xs-12 col-sm-12 col-md-12">
-            <div class="form-group">
-                <strong>Form Factor:</strong>
-                {{ $storage->formFactor }}
-            </div>
-        </div>
-        <div class="col-xs-12 col-sm-12 col-md-12">
-            <div class="form-group">
-                <strong>Capacity:</strong>
-                {{ $storage->capacity }}
-            </div>
-        </div>
-        <div class="col-xs-12 col-sm-12 col-md-12">
-            <div class="form-group">
-                <strong>Supplier:</strong>
-                {{ $storage->supplier }}
-            </div>
-        </div>
-        <div class="col-xs-12 col-sm-12 col-md-12">
-            <div class="form-group">
-                <strong>Warranty:</strong>
-                {{ $storage->warranty }}
-            </div>
-        </div>
-        <div class="col-xs-12 col-sm-12 col-md-12">
-            <div class="form-group">
-                <strong>Price:</strong>
-                {{ $storage->price }}
-            </div>
-        </div>
-    </div>
-@endsection
+  @section('content')
+  
+      <style>
+          .row{
+              margin-left: 5px;
+          }
+      </style>
+      <div class="row">
+          <div class="col-lg-12 margin-tb">
+              <div class="pull-left" >
+                  <h2> Show Storage</h2>
+              </div>
+              <button onclick="history.back()">Go Back</button>
+          </div>
+      </div>
+     
+      <table class="table table-bordered">
+          <tr>
+                  <th>Name</th>
+                  <th>Manufacturer</th>
+                  <th>Type</th>
+                  <th>Form Factor</th>
+                  <th>Capacity</th>
+                  <th>Supplier</th>
+                  <th>Warranty</th>
+                  <th>Price</th>
+          </tr>
+          <tr>
+              <td>{{ $storage->name }}</td>
+              <td>{{ $storage->manufacturer }}</td>
+              <td>{{ $storage->type }}</td>
+              <td>{{ $storage->formFactor }}</td>
+              <td>{{ $storage->capacity }}</td>
+              <td>{{ $storage->supplier }}</td>
+              <td>{{ $storage->warranty }}</td>
+              <td>{{ $storage->price }}</td>
+          </tr>
+  
+  @endsection
+  

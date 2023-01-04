@@ -1,53 +1,37 @@
-@extends('layout')
+@extends('layouts\app')
   
 @section('content')
+
+    <style>
+        .row{
+            margin-left: 5px;
+        }
+    </style>
     <div class="row">
         <div class="col-lg-12 margin-tb">
-            <div class="pull-left">
+            <div class="pull-left" >
                 <h2> Show Graphics Card</h2>
             </div>
-            <div class="pull-right">
-                <a class="btn btn-primary" href="{{ route('gpu.index') }}"> Back</a>
-            </div>
+            <button onclick="history.back()">Go Back</button>
         </div>
     </div>
    
-    <div class="row">
-        <div class="col-xs-12 col-sm-12 col-md-12">
-            <div class="form-group">
-                <strong>Name:</strong>
-                {{ $gpu->name }}
-            </div>
-        </div>
-        <div class="col-xs-12 col-sm-12 col-md-12">
-            <div class="form-group">
-                <strong>Manufacturer:</strong>
-                {{ $gpu->manufacturer }}
-            </div>
-        </div>
-        <div class="col-xs-12 col-sm-12 col-md-12">
-            <div class="form-group">
-                <strong>Memory:</strong>
-                {{ $gpu->memory }}
-            </div>
-        </div>
-        <div class="col-xs-12 col-sm-12 col-md-12">
-            <div class="form-group">
-                <strong>Supplier:</strong>
-                {{ $gpu->supplier }}
-            </div>
-        </div>
-        <div class="col-xs-12 col-sm-12 col-md-12">
-            <div class="form-group">
-                <strong>Warranty:</strong>
-                {{ $gpu->warranty }}
-            </div>
-        </div>
-        <div class="col-xs-12 col-sm-12 col-md-12">
-            <div class="form-group">
-                <strong>Price:</strong>
-                {{ $gpu->price }}
-            </div>
-        </div>
-    </div>
+    <table class="table table-bordered">
+        <tr>
+                <th>Name</th>
+                <th>Manufacturer</th>
+                <th>Memory</th>
+                <th>Supplier</th>
+                <th>Warranty</th>
+                <th>Price</th>
+        </tr>
+        <tr>
+            <td>{{ $gpu->name }}</td>
+            <td>{{ $gpu->manufacturer }}</td>
+            <td>{{ $gpu->memory }}</td>
+            <td>{{ $gpu->supplier }}</td>
+            <td>{{ $gpu->warranty }}</td>
+            <td>{{ $gpu->price }}</td>
+        </tr>
+
 @endsection

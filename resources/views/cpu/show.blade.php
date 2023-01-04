@@ -1,53 +1,37 @@
-@extends('layout')
+@extends('layouts\app')
   
 @section('content')
+
+    <style>
+        .row{
+            margin-left: 5px;
+        }
+    </style>
     <div class="row">
         <div class="col-lg-12 margin-tb">
-            <div class="pull-left">
+            <div class="pull-left" >
                 <h2> Show CPU</h2>
             </div>
-            <div class="pull-right">
-                <a class="btn btn-primary" href="{{ route('cpu.index') }}"> Back</a>
-            </div>
+            <button onclick="history.back()">Go Back</button>
         </div>
     </div>
    
-    <div class="row">
-        <div class="col-xs-12 col-sm-12 col-md-12">
-            <div class="form-group">
-                <strong>Name:</strong>
-                {{ $cpu->name }}
-            </div>
-        </div>
-        <div class="col-xs-12 col-sm-12 col-md-12">
-            <div class="form-group">
-                <strong>Manufacturer:</strong>
-                {{ $cpu->manufacturer }}
-            </div>
-        </div>
-        <div class="col-xs-12 col-sm-12 col-md-12">
-            <div class="form-group">
-                <strong>Number of cores:</strong>
-                {{ $cpu->coreNumbers }}
-            </div>
-        </div>
-        <div class="col-xs-12 col-sm-12 col-md-12">
-            <div class="form-group">
-                <strong>Supplier:</strong>
-                {{ $cpu->supplier }}
-            </div>
-        </div>
-        <div class="col-xs-12 col-sm-12 col-md-12">
-            <div class="form-group">
-                <strong>Warranty:</strong>
-                {{ $cpu->warranty }}
-            </div>
-        </div>
-        <div class="col-xs-12 col-sm-12 col-md-12">
-            <div class="form-group">
-                <strong>Price:</strong>
-                {{ $cpu->price }}
-            </div>
-        </div>
-    </div>
+    <table class="table table-bordered">
+        <tr>
+                <th>Name</th>
+                <th>Manufacturer</th>
+                <th>Number of cores</th>
+                <th>Supplier</th>
+                <th>Warranty</th>
+                <th>Price</th>
+        </tr>
+        <tr>
+            <td>{{ $cpu->name }}</td>
+            <td>{{ $cpu->manufacturer }}</td>
+            <td>{{ $cpu->coreNumbers }}</td>
+            <td>{{ $cpu->supplier }}</td>
+            <td>{{ $cpu->warranty }}</td>
+            <td>{{ $cpu->price }}</td>
+        </tr>
+
 @endsection
