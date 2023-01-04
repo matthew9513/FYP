@@ -13,10 +13,10 @@ class CPUController extends Controller
      */
     public function index()
     {
-        $cpu = CPU::latest()->paginate(5);
+        $cpu = CPU::latest() ->paginate(15);
       
         return view('cpu.index',compact('cpu'))
-            ->with('i', (request()->input('page', 1) - 1) * 5);
+            ->with('i', (request()->input('page', 1) - 1) * 15);
     }
 
     /**

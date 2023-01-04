@@ -14,10 +14,10 @@ class CasingController extends Controller
      */
     public function index()
     {
-        $casing = Casing::latest()->paginate(5);
+        $casing = Casing::latest()->paginate(15);
       
         return view('casing.index',compact('casing'))
-            ->with('i', (request()->input('page', 1) - 1) * 5);
+            ->with('i', (request()->input('page', 1) - 1) * 15);
     }
 
     /**

@@ -14,10 +14,10 @@ class StorageController extends Controller
      */
     public function index()
     {
-        $storage = Storage::latest()->paginate(5);
+        $storage = Storage::latest()->paginate(15);
       
         return view('storage.index',compact('storage'))
-            ->with('i', (request()->input('page', 1) - 1) * 5);
+            ->with('i', (request()->input('page', 1) - 1) * 15);
     }
 
     /**

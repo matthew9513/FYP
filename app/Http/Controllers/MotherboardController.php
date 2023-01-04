@@ -14,10 +14,10 @@ class MotherboardController extends Controller
      */
     public function index()
     {
-        $motherboard = Motherboard::latest()->paginate(5);
+        $motherboard = Motherboard::latest()->paginate(15);
       
         return view('motherboard.index',compact('motherboard'))
-            ->with('i', (request()->input('page', 1) - 1) * 5);
+            ->with('i', (request()->input('page', 1) - 1) * 15);
     }
 
     /**

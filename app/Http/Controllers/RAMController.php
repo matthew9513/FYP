@@ -14,10 +14,10 @@ class RAMController extends Controller
      */
     public function index()
     {
-        $ram = RAM::latest()->paginate(5);
+        $ram = RAM::latest()->paginate(15);
       
         return view('ram.index',compact('ram'))
-            ->with('i', (request()->input('page', 1) - 1) * 5);
+            ->with('i', (request()->input('page', 1) - 1) * 15);
     }
 
     /**

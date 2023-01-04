@@ -14,10 +14,10 @@ class GPUController extends Controller
      */
     public function index()
     {
-        $gpu = GPU::latest()->paginate(5);
+        $gpu = GPU::latest()->paginate(15);
       
         return view('gpu.index',compact('gpu'))
-            ->with('i', (request()->input('page', 1) - 1) * 5);
+            ->with('i', (request()->input('page', 1) - 1) * 15);
     }
 
     /**
@@ -79,7 +79,7 @@ class GPUController extends Controller
      * Update the specified resource in storage.
      *
      * @param  \Illuminate\Http\Request  $request
-     * @param  \App\Models\GPU  $gPU
+     * @param  \App\Models\GPU  $gpu
      * @return \Illuminate\Http\Response
      */
     public function update(Request $request, GPU $gpu)
@@ -93,7 +93,7 @@ class GPUController extends Controller
             'price' => 'required',
         ]);
 
-        GPU::update($request->all());
+        $gpu->update($request->all());
 
         return redirect()->route('gpu.index')
                         ->with('success', 'Graphics Card updated successfully');
