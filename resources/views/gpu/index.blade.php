@@ -27,7 +27,7 @@
             <th>Supplier</th>
             <th>Warranty</th>
             <th>Price</th>
-            <th width="280px">Action</th>
+            <th width="200px">Action</th>
         </tr>
         @foreach ($gpu as $gpu)
         <tr>
@@ -40,7 +40,6 @@
             <td>{{ $gpu->price }}</td>
             <td>
             <form action="{{ route('gpu.destroy',$gpu->id) }}" method="POST">
-                    <a class="btn btn-info" href="{{ route('gpu.show',$gpu->id) }}">Show</a>
     
                     <a class="btn btn-primary" href="{{ route('gpu.edit',$gpu->id) }}">Edit</a>
    

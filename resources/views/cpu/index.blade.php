@@ -27,7 +27,7 @@
             <th>Supplier</th>
             <th>Warranty</th>
             <th>Price</th>
-            <th width="280px">Action</th>
+            <th width="200px">Action</th>
         </tr>
         @foreach ($cpu as $cpu)
         <tr>
@@ -40,8 +40,6 @@
             <td>{{ $cpu->price }}</td>
             <td>
             <form action="{{ route('cpu.destroy',$cpu->id) }}" method="POST">
-                    <a class="btn btn-info" href="{{ route('cpu.show',$cpu->id) }}">Show</a>
-    
                     <a class="btn btn-primary" href="{{ route('cpu.edit',$cpu->id) }}">Edit</a>
    
                     @csrf

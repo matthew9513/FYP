@@ -27,7 +27,7 @@
             <th>Supplier</th>
             <th>Warranty</th>
             <th>Price</th>
-            <th width="280px">Action</th>
+            <th width="200px">Action</th>
         </tr>
         @foreach ($casing as $casing)
         <tr>
@@ -40,7 +40,6 @@
             <td>{{ $casing->price }}</td>
             <td>
             <form action="{{ route('casing.destroy',$casing->id) }}" method="POST">
-                    <a class="btn btn-info" href="{{ route('casing.show',$casing->id) }}">Show</a>
     
                     <a class="btn btn-primary" href="{{ route('casing.edit',$casing->id) }}">Edit</a>
    

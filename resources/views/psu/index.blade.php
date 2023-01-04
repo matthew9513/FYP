@@ -29,7 +29,7 @@
             <th>Supplier</th>
             <th>Warranty</th>
             <th>Price</th>
-            <th width="280px">Action</th>
+            <th width="200px">Action</th>
         </tr>
         @foreach ($psu as $psu)
         <tr>
@@ -44,7 +44,6 @@
             <td>{{ $psu->price }}</td>
             <td>
             <form action="{{ route('psu.destroy',$psu->id) }}" method="POST">
-                    <a class="btn btn-info" href="{{ route('psu.show',$psu->id) }}">Show</a>
     
                     <a class="btn btn-primary" href="{{ route('psu.edit',$psu->id) }}">Edit</a>
    

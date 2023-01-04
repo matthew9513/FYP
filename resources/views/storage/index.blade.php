@@ -29,7 +29,7 @@
             <th>Supplier</th>
             <th>Warranty</th>
             <th>Price</th>
-            <th width="280px">Action</th>
+            <th width="200px">Action</th>
         </tr>
         @foreach ($storage as $storage)
         <tr>
@@ -44,7 +44,6 @@
             <td>{{ $storage->price }}</td>
             <td>
             <form action="{{ route('storage.destroy',$storage->id) }}" method="POST">
-                    <a class="btn btn-info" href="{{ route('storage.show',$storage->id) }}">Show</a>
     
                     <a class="btn btn-primary" href="{{ route('storage.edit',$storage->id) }}">Edit</a>
    

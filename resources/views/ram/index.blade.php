@@ -29,7 +29,7 @@
             <th>Supplier</th>
             <th>Warranty</th>
             <th>Price</th>
-            <th width="280px">Action</th>
+            <th width="200px">Action</th>
         </tr>
         @foreach ($ram as $ram)
         <tr>
@@ -44,7 +44,6 @@
             <td>{{ $ram->price }}</td>
             <td>
             <form action="{{ route('ram.destroy',$ram->id) }}" method="POST">
-                    <a class="btn btn-info" href="{{ route('ram.show',$ram->id) }}">Show</a>
     
                     <a class="btn btn-primary" href="{{ route('ram.edit',$ram->id) }}">Edit</a>
    

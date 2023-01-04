@@ -30,7 +30,7 @@
             <th>Supplier</th>
             <th>Warranty</th>
             <th>Price</th>
-            <th width="280px">Action</th>
+            <th width="200px">Action</th>
         </tr>
         @foreach ($motherboard as $motherboard)
         <tr>
@@ -46,7 +46,6 @@
             <td>{{ $motherboard->price }}</td>
             <td>
             <form action="{{ route('motherboard.destroy',$motherboard->id) }}" method="POST">
-                    <a class="btn btn-info" href="{{ route('motherboard.show',$motherboard->id) }}">Show</a>
     
                     <a class="btn btn-primary" href="{{ route('motherboard.edit',$motherboard->id) }}">Edit</a>
    
