@@ -50,12 +50,12 @@
           <div class="card-body">
             <h1 class="card-title pricing-card-title">RM 1500<small class="text-muted fw-light"> approximately</small></h1>
             <ul class="list-unstyled mt-3 mb-4">
-              <li>AMD Processor</li>
+              <li>AMD 3000 Series Processor</li>
               <li>1TB HDD Storage</li>
               <li>8GB RAM</li>
-              <li>AMD Radeon HD Graphics</li>
+              <li>Nvidia GT 1030</li>
             </ul>
-            <a href = "#"><button type="button"  class="w-100 btn btn-lg btn-primary">More details</button></a>
+            <a href = "/lowBudget"><button type="button"  class="w-100 btn btn-lg btn-primary">More details</button></a>
           </div>
         </div>
       </div>
@@ -67,12 +67,12 @@
           <div class="card-body">
             <h1 class="card-title pricing-card-title">RM 3000<small class="text-muted fw-light"> approximately</small></h1>
             <ul class="list-unstyled mt-3 mb-4">
-              <li>#</li>
-              <li>#</li>
-              <li>#</li>
-              <li>#</li>
+              <li>Intel i5 10th Gen Processor</li>
+              <li>250GB SSD + 1TB HDD Storage</li>
+              <li>16GB RAM</li>
+              <li>Nvidia RTX 3060</li>
             </ul>
-            <a href = "#"><button type="button"  class="w-100 btn btn-lg btn-primary">More details</button></a>
+            <a href = "/mediumBudget"><button type="button"  class="w-100 btn btn-lg btn-primary">More details</button></a>
           </div>
         </div>
       </div>
@@ -84,12 +84,12 @@
           <div class="card-body">
             <h1 class="card-title pricing-card-title">RM 4500<small class="text-muted fw-light"> approximately</small></h1>
             <ul class="list-unstyled mt-3 mb-4">
-              <li>#</li>
-              <li>#</li>
-              <li>#</li>
-              <li>#</li>
+              <li>AMD 5000 Series Processor</li>
+              <li>500GB SSD + 1TB HDD Storage</li>
+              <li>16GB RAM</li>
+              <li>Nvidia RTX 3070</li>
             </ul>
-            <a href = "#"><button type="button"  class="w-100 btn btn-lg btn-primary">More details</button></a>
+            <a href = "/mediumHighBudget"><button type="button"  class="w-100 btn btn-lg btn-primary">More details</button></a>
           </div>
         </div>
       </div>
@@ -101,12 +101,12 @@
           <div class="card-body">
             <h1 class="card-title pricing-card-title">RM 6000<small class="text-muted fw-light"> approximately</small></h1>
             <ul class="list-unstyled mt-3 mb-4">
-              <li>#</li>
-              <li>#</li>
-              <li>#</li>
-              <li>#</li>
+              <li>Intel i7 10th Gen Processor</li>
+              <li>500GB SSD + 1TB HDD Storage</li>
+              <li>32GB RAM</li>
+              <li>Nvidia RTX 3070</li>
             </ul>
-            <a href = "#"><button type="button"  class="w-100 btn btn-lg btn-primary">More details</button></a>
+            <a href = "/highBudget"><button type="button"  class="w-100 btn btn-lg btn-primary">More details</button></a>
           </div>
         </div>
       </div>

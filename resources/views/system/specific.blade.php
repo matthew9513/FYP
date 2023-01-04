@@ -42,34 +42,34 @@
       <div class="col">
         <div class="card mb-4 rounded-3 shadow-sm">
           <div class="card-header py-3">
-            <h4 class="my-0 fw-normal">#</h4>
+            <h4 class="my-0 fw-normal">Adobe Photoshop</h4>
           </div>
           <div class="card-body">
             <h1 class="card-title pricing-card-title">Price<small class="text-muted fw-light"></small></h1>
             <ul class="list-unstyled mt-3 mb-4">
-              <li>#</li>
-              <li>#</li>
-              <li>#</li>
-              <li>#</li>
+              <li>Intel i5 10th Gen Processor</li>
+              <li>250GB SSD + 1TB HDD</li>
+              <li>16GB RAM</li>
+              <li>Nvidia GTX 1660</li>
             </ul>
-            <a href = "#"><button type="button"  class="w-100 btn btn-lg btn-primary">More details</button></a>
+            <a href = "/adobe"><button type="button"  class="w-100 btn btn-lg btn-primary">More details</button></a>
           </div>
         </div>
       </div>
       <div class="col">
         <div class="card mb-4 rounded-3 shadow-sm">
           <div class="card-header py-3">
-            <h4 class="my-0 fw-normal">#</h4>
+            <h4 class="my-0 fw-normal">Adobe Premiere Pro</h4>
           </div>
           <div class="card-body">
             <h1 class="card-title pricing-card-title">Price<small class="text-muted fw-light"></small></h1>
             <ul class="list-unstyled mt-3 mb-4">
-              <li>#</li>
-              <li>#</li>
-              <li>#</li>
-              <li>#</li>
+            <li>Intel i5 10th Gen Processor</li>
+              <li>250GB SSD + 1TB HDD Storage</li>
+              <li>16GB RAM</li>
+              <li>Nvidia RTX 3060</li>
             </ul>
-            <a href = "#"><button type="button"  class="w-100 btn btn-lg btn-primary">More details</button></a>
+            <a href = "/adobePremiere"><button type="button"  class="w-100 btn btn-lg btn-primary">More details</button></a>
           </div>
         </div>
       </div>
@@ -79,34 +79,34 @@
       <div class="col">
         <div class="card mb-4 rounded-3 shadow-sm">
           <div class="card-header py-3">
-            <h4 class="my-0 fw-normal">#</h4>
+            <h4 class="my-0 fw-normal">VALORANT</h4>
           </div>
           <div class="card-body">
             <h1 class="card-title pricing-card-title">Price<small class="text-muted fw-light"></small></h1>
             <ul class="list-unstyled mt-3 mb-4">
-              <li>#</li>
-              <li>#</li>
-              <li>#</li>
-              <li>#</li>
+              <li>AMD 3000 Series Processor</li>
+              <li>500GB SSD</li>
+              <li>16GB RAM</li>
+              <li>Nvidia GTX 1660 Super</li>
             </ul>
-            <a href = "#"><button type="button"  class="w-100 btn btn-lg btn-primary">More details</button></a>
+            <a href = "/valo"><button type="button"  class="w-100 btn btn-lg btn-primary">More details</button></a>
           </div>
         </div>
       </div>
       <div class="col">
         <div class="card mb-4 rounded-3 shadow-sm">
           <div class="card-header py-3">
-            <h4 class="my-0 fw-normal">#</h4>
+            <h4 class="my-0 fw-normal">Forza Horizon 5</h4>
           </div>
           <div class="card-body">
             <h1 class="card-title pricing-card-title">Price<small class="text-muted fw-light"></small></h1>
             <ul class="list-unstyled mt-3 mb-4">
-              <li>#</li>
-              <li>#</li>
-              <li>#</li>
-              <li>#</li>
+            <li>Intel i7 10th Gen Processor</li>
+              <li>500GB SSD + 1TB HDD Storage</li>
+              <li>32GB RAM</li>
+              <li>Nvidia RTX 3070</li>
             </ul>
-            <a href = "#"><button type="button"  class="w-100 btn btn-lg btn-primary">More details</button></a>
+            <a href = "/forza"><button type="button"  class="w-100 btn btn-lg btn-primary">More details</button></a>
           </div>
         </div>
       </div>

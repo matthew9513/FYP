@@ -17,19 +17,33 @@ use Illuminate\Support\Facades\Route;
 //Admin
 
 Route::prefix('admin')->middleware(['auth','isAdmin'])->group(function(){
-    Route::resource('cpu', CPUController::class);
+    Route::resource('cpu', CPUController::class)->except([
+        'show'
+    ]);
 
-    Route::resource('motherboard', MotherboardController::class);
+    Route::resource('motherboard', MotherboardController::class)->except([
+        'show'
+    ]);
     
-    Route::resource('ram', RAMController::class);
+    Route::resource('ram', RAMController::class)->except([
+        'show'
+    ]);
     
-    Route::resource('casing', CasingController::class);
+    Route::resource('casing', CasingController::class)->except([
+        'show'
+    ]);
     
-    Route::resource('psu', PSUController::class);
+    Route::resource('psu', PSUController::class)->except([
+        'show'
+    ]);
     
-    Route::resource('storage', StorageController::class);
+    Route::resource('storage', StorageController::class)->except([
+        'show'
+    ]);
     
-    Route::resource('gpu', GPUController::class);
+    Route::resource('gpu', GPUController::class)->except([
+        'show'
+    ]);
 });
 
 
@@ -43,5 +57,32 @@ Route::get('/specific', [App\Http\Controllers\SpecificController::class, 'index'
 
 Route::resource('budget', BudgetController::class);
 
-Route::resource('configuration', ConfigurationController::class);
+Route::resource('cpu', CPUController::class)->only([ 'show']);
 
+Route::resource('motherboard', MotherboardController::class)->only([ 'show']);
+
+Route::resource('ram', RAMController::class)->only([ 'show']);
+
+Route::resource('casing', CasingController::class)->only([ 'show']);
+
+Route::resource('psu', PSUController::class)->only([ 'show']);
+
+Route::resource('storage', StorageController::class)->only([ 'show']);
+
+Route::resource('gpu', GPUController::class)->only([ 'show']);
+
+Route::view('/lowBudget', 'system.lowBudget');
+
+Route::view('/mediumBudget', 'system.mediumBudget');
+
+Route::view('/mediumHighBudget', 'system.mediumHighBudget');
+
+Route::view('/highBudget', 'system.highBudget');
+
+Route::view('/adobe', 'system.adobe');
+
+Route::view('/adobePremiere', 'system.adobePremiere');
+
+Route::view('/valo', 'system.valo');
+
+Route::view('/forza', 'system.forza');
