@@ -45,7 +45,7 @@
             <h4 class="my-0 fw-normal">Adobe Photoshop</h4>
           </div>
           <div class="card-body">
-            <h1 class="card-title pricing-card-title">Price<small class="text-muted fw-light"></small></h1>
+            <h1 class="card-title pricing-card-title">Specifications<small class="text-muted fw-light"></small></h1>
             <ul class="list-unstyled mt-3 mb-4">
               <li>Intel i5 10th Gen Processor</li>
               <li>250GB SSD + 1TB HDD</li>
@@ -62,7 +62,7 @@
             <h4 class="my-0 fw-normal">Adobe Premiere Pro</h4>
           </div>
           <div class="card-body">
-            <h1 class="card-title pricing-card-title">Price<small class="text-muted fw-light"></small></h1>
+            <h1 class="card-title pricing-card-title">Specifications<small class="text-muted fw-light"></small></h1>
             <ul class="list-unstyled mt-3 mb-4">
             <li>Intel i5 10th Gen Processor</li>
               <li>250GB SSD + 1TB HDD Storage</li>
@@ -82,7 +82,7 @@
             <h4 class="my-0 fw-normal">VALORANT</h4>
           </div>
           <div class="card-body">
-            <h1 class="card-title pricing-card-title">Price<small class="text-muted fw-light"></small></h1>
+            <h1 class="card-title pricing-card-title">Specifications<small class="text-muted fw-light"></small></h1>
             <ul class="list-unstyled mt-3 mb-4">
               <li>AMD 3000 Series Processor</li>
               <li>500GB SSD</li>
@@ -99,7 +99,7 @@
             <h4 class="my-0 fw-normal">Forza Horizon 5</h4>
           </div>
           <div class="card-body">
-            <h1 class="card-title pricing-card-title">Price<small class="text-muted fw-light"></small></h1>
+            <h1 class="card-title pricing-card-title">Specifications<small class="text-muted fw-light"></small></h1>
             <ul class="list-unstyled mt-3 mb-4">
             <li>Intel i7 10th Gen Processor</li>
               <li>500GB SSD + 1TB HDD Storage</li>
